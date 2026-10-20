@@ -1,1 +1,1 @@
-# sql-101-mastering--1094396160--2026-ii
+# sql-101-mastering-1094396160-2026-ii
