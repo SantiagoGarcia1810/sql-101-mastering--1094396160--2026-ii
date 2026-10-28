@@ -1,0 +1,25 @@
+-- exercise 2 - a
+-- farm.coffee varieties.: variety, species y descriptcion 
+
+SELECT
+    variety_name as variety, species, description  
+FROM
+    farm.coffee_varieties
+LIMIT 10;
+
+/*
+    variety    | species |                             description
+---------------+---------+---------------------------------------------------------------------
+ Castillo      | arabica | Variedad colombiana resistente a la roya, la más sembrada del país.
+ Colombia      | arabica | Variedad compuesta resistente a la roya, antecesora de Castillo.
+ Caturra       | arabica | Mutación de Borbón de porte bajo y alta productividad.
+ Cenicafé 1    | arabica | Variedad de porte bajo con resistencia a la roya. Típica        | arabica | Variedad tradicional de porte alto.
+ Borbón        | arabica | Variedad tradicional de buena calidad en taza.
+ Tabi          | arabica | Variedad de porte alto resistente a la roya.
+ Geisha        | arabica | Variedad de especialidad con perfil floral.
+ Borbón Rosado | arabica | Variedad de especialidad de fruto rosado.
+ Maragogipe    | arabica | Variedad de grano grande.
+(10 filas)
+
+
+
