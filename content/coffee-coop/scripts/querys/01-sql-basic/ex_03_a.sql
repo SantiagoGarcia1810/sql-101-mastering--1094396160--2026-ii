@@ -2,9 +2,9 @@
 -- farm.certifications: certification_name, issuing_body, premium_per_kg with AS and order by DESCA
 
 SELECT
-     certification_name as certification, issuing_body as issuer, premium_per_kg as premium_per_kg_cop
+     T1.certification_name as certification, T1.issuing_body as issuer, T1.premium_per_kg as premium_per_kg_cop
 from
-    farm.certifications
+    farm.certifications AS T1
 ORDER by
     premium_per_kg DESC 
 LIMIT

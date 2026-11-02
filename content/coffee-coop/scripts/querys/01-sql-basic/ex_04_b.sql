@@ -3,13 +3,13 @@
 
 
 SELECT 
-     municipality_code , municipality_name AS municipality 
+     T1.municipality_code , T1.municipality_name AS municipality 
 from 
-     geo.municipalities
+     geo.municipalities AS T1
 where
-    department_code='54' and municipality_name like 'San%'
+    T1.department_code='54' and T1.municipality_name like 'San%'
 order by
-    municipality_name 
+    T1.municipality_name 
 LIMIT
     10;
 /*

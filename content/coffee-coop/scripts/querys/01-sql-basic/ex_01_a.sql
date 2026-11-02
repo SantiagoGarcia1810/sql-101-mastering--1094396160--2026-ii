@@ -2,9 +2,9 @@
 -- Departaments: DANE code and name
 
 SELECT
-     *
+     T1.*
 FROM
-    geo.departments;
+    geo.departments as T1;
 
 /**
 department_code | department_name

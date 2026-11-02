@@ -2,9 +2,9 @@
 -- farm.coffee varieties.: varieties of the species *Arabica* that are not resistant to rust, order by DESC
 
 SELECT
-    variety_name as variety,species, description  
+    T1.variety_name as variety,species, T1.description  
 FROM
-    farm.coffee_varieties
+    farm.coffee_varieties AS T1
 where
     species='arabica' and is_rust_resistant=FALSE
 ORDER BY

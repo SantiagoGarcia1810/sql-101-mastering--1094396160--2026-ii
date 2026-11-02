@@ -2,9 +2,9 @@
 -- farm.coffee varieties.: variety, species y descriptcion 
 
 SELECT
-    variety_name as variety, species, description  
+    T1.variety_name as variety, T1.species, T1.description  
 FROM
-    farm.coffee_varieties
+    farm.coffee_varieties as T1
 LIMIT 10;
 
 /*

@@ -2,9 +2,9 @@
 -- Departaments: DANE code and name , rename  
 
 SELECT
-     department_code as code, department_name as name
+     T1.department_code as code, T1.department_name as name
 FROM
-    geo.departments 
+    geo.departments as T1
 LIMIT 
     10;
 

@@ -4,13 +4,13 @@
 
 
 SELECT 
-     municipality_code , municipality_name AS municipality 
+     T1.municipality_code , T1.municipality_name AS municipality 
 from 
-     geo.municipalities
+     geo.municipalities AS T1
 where
-    municipality_name ILIKE '%pamplona'
+    T1.municipality_name ILIKE '%pamplona'
 order by
-    municipality_name
+    T1.municipality_name
 LIMIT
     10;
 /*
